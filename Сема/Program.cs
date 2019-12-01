@@ -20,6 +20,10 @@ namespace Сема
             try
             {
                 data = File.ReadAllText(write_read_Path);
+                if (data == "")
+                {
+                    data = "[]";
+                }
                 lines = JsonConvert.DeserializeObject<List<Lines>>(data);
             }
             catch (Exception e)
