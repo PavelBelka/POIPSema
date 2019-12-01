@@ -1,0 +1,1 @@
+{"equimpents":[],"Name":"тест 1"}{"equimpents":[{"Name":"негр","Number":"0002","Status":"жив пока","Specification":"обычный нигер чернорабочий"}],"Name":"тест 2"}
