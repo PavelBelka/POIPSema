@@ -102,6 +102,8 @@ namespace Сема
                     {
                         Console.WriteLine("Введите новое имя линии:");
                         lines[a].Update(Console.ReadLine());
+                        Console.Clear();
+                        Menu_level_0();
                     }
                     break;
                 case 3:
@@ -213,7 +215,7 @@ namespace Сема
                     }
                     else
                     {
-                        Console.WriteLine(lines[c].ToString());
+                        Console.WriteLine(lines[num].equimpents[c].ToString());
                         Console.WriteLine("Выберите действие:\n1) Назад");
                         if (Convert.ToInt32(Console.ReadLine()) == 1)
                         {

@@ -45,7 +45,7 @@ namespace Сема
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"Название: {Name}\nИнентарный номер: {Number}\nОписание: {Specification}\nСтатус: {Status}";
         }
     }
 
