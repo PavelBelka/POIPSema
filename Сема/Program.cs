@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Сема
@@ -11,7 +10,6 @@ namespace Сема
         static string write_read_Path = @"Data.json";
         static int avaliable = 0;
         private static string data;
-        private static string[] numbers;
         static List<Lines> lines = new List<Lines>();
 
         static void Main(string[] args)
@@ -102,6 +100,7 @@ namespace Сема
                     {
                         Console.WriteLine("Введите новое имя линии:");
                         lines[a].Update(Console.ReadLine());
+                        avaliable = 1;
                         Console.Clear();
                         Menu_level_0();
                     }
@@ -183,7 +182,7 @@ namespace Сема
                     }
                     else
                     {
-                        Console.WriteLine("Введите новые изменения в формате имя|номер|статус|описание.Если в секция не требует изменения то нужно поставить -:");
+                        Console.WriteLine("Введите новые изменения в формате имя|номер|статус|описание.Если секция не требует изменений, то нужно поставить -:");
                         lines[num].equimpents[a].Update(Console.ReadLine());
                     }
                     break;
