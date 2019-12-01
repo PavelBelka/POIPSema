@@ -184,6 +184,9 @@ namespace Сема
                     {
                         Console.WriteLine("Введите новые изменения в формате имя|номер|статус|описание.Если секция не требует изменений, то нужно поставить -:");
                         lines[num].equimpents[a].Update(Console.ReadLine());
+                        avaliable = 1;
+                        Console.Clear();
+                        Menu_level_0();
                     }
                     break;
                 case 3:

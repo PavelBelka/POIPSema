@@ -28,7 +28,7 @@ namespace Сема
 
         public void Update(string data)
         {
-            data = Name;
+            Name = data;
         }
 
         public int Count()
